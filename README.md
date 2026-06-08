@@ -11,7 +11,7 @@ This is a static portfolio site designed for GitHub Pages. It highlights experie
 - `index.html` - main portfolio page
 - `styles.css` - site styling
 - `script.js` - small interaction enhancements
-- `assets/` - resume and visual assets
+- `assets/` - public-safe resume and visual assets
 
 ## Local Preview
 
