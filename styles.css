@@ -551,6 +551,55 @@ h1 {
   margin: 0;
 }
 
+
+.hobbies-section {
+  background: #101820;
+}
+
+.hobbies-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+  gap: 28px;
+  align-items: center;
+  border: 1px solid rgba(243, 183, 95, 0.24);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.hobbies-panel > div:first-child {
+  padding: 30px;
+}
+
+.hobbies-panel h3 {
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+}
+
+.hobbies-panel p {
+  color: var(--muted);
+}
+
+.hobby-tags {
+  display: flex;
+  min-height: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 12px;
+  padding: 30px;
+  border-left: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.hobby-tags span {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  padding: 0 14px;
+  border: 1px solid rgba(243, 183, 95, 0.28);
+  background: rgba(243, 183, 95, 0.08);
+  color: #f8d39a;
+  font-weight: 800;
+}
 @media (max-width: 920px) {
   .site-nav {
     position: fixed;
@@ -595,7 +644,16 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .hobbies-panel {
+    grid-template-columns: 1fr;
+  }
+
   .github-stats {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .hobby-tags {
     border-top: 1px solid var(--line);
     border-left: 0;
   }
