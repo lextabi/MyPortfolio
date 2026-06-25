@@ -38,8 +38,22 @@ const loadGithubStats = async () => {
     const response = await fetch("https://api.github.com/users/lextabi");
     if (!response.ok) throw new Error("GitHub profile unavailable");
     const profile = await response.json();
-    const reposResponse = await fetch("https://api.github.com/users/lextabi/repos?sort=updated&per_page=3");
-    const repos = reposResponse.ok ? await reposResponse.json() : [];
+
+    const repos = [];
+    const perPage = 100;
+    let page = 1;
+
+    while (true) {
+      const reposResponse = await fetch(
+        `https://api.github.com/users/lextabi/repos?sort=updated&per_page=${perPage}&page=${page}`
+      );
+      if (!reposResponse.ok) throw new Error("GitHub repositories unavailable");
+
+      const pageRepos = await reposResponse.json();
+      repos.push(...pageRepos);
+      if (pageRepos.length < perPage) break;
+      page += 1;
+    }
 
     repoCount.textContent = profile.public_repos ?? "--";
     followerCount.textContent = profile.followers ?? "--";
