@@ -10,7 +10,7 @@ The site also includes a professional Beyond Engineering section for Lex's conte
 
 ## Current Sections
 
-- Hero profile and resume download
+- Hero profile and recruiter contact CTA
 - About
 - Professional highlights
 - Skills
@@ -26,7 +26,7 @@ The site also includes a professional Beyond Engineering section for Lex's conte
 - `index.html` - main portfolio page
 - `styles.css` - site styling and responsive layout
 - `script.js` - mobile navigation, footer year, and GitHub profile/repository loading
-- `assets/` - public-safe resume and visual assets
+- `assets/` - public-safe visual assets
 
 ## Latest Session Changes
 
