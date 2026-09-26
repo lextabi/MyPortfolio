@@ -5,280 +5,487 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Lex Joseph Tabi, Senior DevOps Engineer and Application Support Automation Engineer specializing in enterprise warehouse systems, CI/CD, automation, monitoring, and operational reliability."
+      content="Portfolio of Lex Joseph Tabi, Senior DevOps Engineer and Application Support & Automation Engineer with 8+ years keeping business-critical enterprise applications stable, automated, and observable."
     />
+    <meta name="theme-color" content="#070b12" />
     <title>Lex Joseph Tabi | Senior DevOps Engineer & Application Support Engineer</title>
+    <link rel="canonical" href="https://lextabi.github.io/MyPortfolio/" />
+
+    <!-- Link previews for LinkedIn, Facebook, Slack, Teams, etc. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lex Joseph Tabi | Senior DevOps Engineer" />
+    <meta
+      property="og:description"
+      content="CI/CD, automation, monitoring, and L2/L3 support for business-critical enterprise applications."
+    />
+    <meta property="og:url" content="https://lextabi.github.io/MyPortfolio/" />
+    <meta property="og:image" content="https://lextabi.github.io/MyPortfolio/assets/hero-operations.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23070b12'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='28' fill='%2348d7c5'%3ELJ%3C/text%3E%3C/svg%3E"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="aurora" aria-hidden="true">
+      <span class="blob blob-teal"></span>
+      <span class="blob blob-violet"></span>
+      <span class="blob blob-amber"></span>
+      <span class="grid-overlay"></span>
+    </div>
+
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Lex Joseph Tabi home">
         <span class="brand-mark">LJ</span>
         <span>Lex Joseph Tabi</span>
       </a>
-      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav class="site-nav" data-nav>
+      <nav class="site-nav" id="site-nav" data-nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#github">GitHub</a>
+        <a href="#work">What I Do</a>
+        <a href="#github">Projects</a>
         <a href="#hobbies">Beyond Work</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-media" aria-hidden="true"></div>
-        <div class="hero-overlay"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-content">
           <div class="hero-layout">
             <div>
-              <p class="eyebrow">Senior DevOps Engineer / Application Support & Automation Engineer</p>
-              <h1 id="hero-title">I keep enterprise warehouse systems stable, automated, observable, and ready for operations.</h1>
+              <p class="status-pill"><span class="pulse"></span> Open to DevOps, SRE &amp; Application Support roles</p>
+              <p class="eyebrow">Senior DevOps Engineer · Application Support &amp; Automation</p>
+              <h1 id="hero-title">
+                I keep business-critical applications
+                <span class="gradient-text">stable, automated, and observable.</span>
+              </h1>
               <p class="hero-copy">
-                I specialize in CI/CD deployment operations, warehouse management systems, automation platforms,
-                monitoring, incident management, system integrations, and practical documentation that helps teams move faster.
+                8+ years running L2/L3 support, CI/CD releases, automation, databases, integrations, and monitoring
+                for enterprise applications on Linux, Windows, and AWS, with the incident, change, and problem
+                discipline that production needs.
               </p>
               <div class="hero-actions">
-                <a class="button primary" href="#projects">View Work</a>
-                <a class="button secondary" href="#contact">Message Me</a>
+                <a class="button primary" href="#github">View Projects</a>
+                <a class="button secondary" href="#contact">Get in Touch</a>
               </div>
+              <ul class="tech-strip" aria-label="Core technologies">
+                <li>Azure DevOps</li>
+                <li>Ansible</li>
+                <li>AWS</li>
+                <li>RHEL / Linux</li>
+                <li>Oracle &amp; SQL Server</li>
+                <li>IBM MQ</li>
+                <li>Splunk · ELK · Dynatrace</li>
+                <li>ServiceNow</li>
+              </ul>
             </div>
-            <aside class="profile-card" aria-label="Professional portrait of Lex Joseph Tabi">
-              <img src="assets/lex-profile.png" alt="Lex Joseph Tabi professional portrait" />
-              <div>
+            <aside class="profile-card glass" aria-label="Professional portrait of Lex Joseph Tabi">
+              <img src="assets/lex-profile.png" alt="Lex Joseph Tabi professional portrait" width="1402" height="1122" />
+              <div class="profile-meta">
                 <strong>Lex Joseph Tabi</strong>
-                <span>Senior DevOps Engineer / Application Support & Automation Engineer</span>
+                <span>Senior DevOps Engineer</span>
+                <span class="profile-location">Manila, Philippines · GMT+8</span>
               </div>
+              <span class="floating-badge glass">
+                <strong>AWS</strong>
+                Certified Cloud Practitioner
+              </span>
             </aside>
           </div>
         </div>
       </section>
 
-      <section class="section intro-grid" id="about" aria-labelledby="about-title">
+      <section class="section intro-grid reveal" id="about" aria-labelledby="about-title">
         <div>
           <p class="section-kicker">About</p>
           <h2 id="about-title">A production-focused engineer with a DevOps and automation mindset.</h2>
         </div>
         <div class="section-copy">
           <p>
-            I am a Manila-based Senior Software Engineer and DevOps Engineer with 8+ years of experience supporting
-            enterprise Warehouse Management Systems, automation platforms, CI/CD pipelines, cloud technologies, and
-            application support operations.
+            I'm a Manila-based Senior DevOps Engineer at Accenture with 8+ years of experience keeping enterprise
+            applications healthy in production. I handle the full path from L2 incident triage, database queries, and
+            message-flow troubleshooting to L3 releases, fix packs, configuration changes, and disaster-recovery readiness.
           </p>
           <p>
-            I support customer-facing warehouse applications across Linux and Windows environments, from L2 incident
-            investigation and database or message-flow troubleshooting through L3 releases, fixpacks, configuration
-            changes, and disaster-recovery readiness.
+            Most recently that has meant high-volume warehouse, shipping, and e-commerce platforms for U.S. operations.
+            The practices carry over to any system where uptime matters: automated deployments, useful alerts,
+            clear runbooks, and fast, calm incident response.
           </p>
+          <p class="support-label">Systems I support</p>
+          <ul class="chip-list">
+            <li>Web apps &amp; REST APIs</li>
+            <li>Oracle &amp; SQL Server databases</li>
+            <li>Messaging &amp; middleware (IBM MQ)</li>
+            <li>Batch &amp; scheduled jobs</li>
+            <li>AWS-hosted microservices</li>
+            <li>Linux &amp; Windows servers</li>
+            <li>Vendor / COTS platforms</li>
+            <li>CI/CD pipelines</li>
+          </ul>
         </div>
       </section>
 
-      <section class="metrics" aria-label="Professional highlights">
-        <div>
-          <strong>8+ years</strong>
-          <span>enterprise WMS, DevOps, and support operations</span>
+      <section class="metrics reveal" aria-label="Professional highlights">
+        <div class="glass">
+          <strong>8+ yrs</strong>
+          <span>enterprise application support &amp; DevOps</span>
         </div>
-        <div>
-          <strong>AWS CCP</strong>
-          <span>certified through February 2028</span>
+        <div class="glass">
+          <strong>L2 / L3</strong>
+          <span>production support across prod, DR &amp; non-prod</span>
         </div>
-        <div>
+        <div class="glass">
+          <strong>AWS</strong>
+          <span>Certified Cloud Practitioner, valid through 2028</span>
+        </div>
+        <div class="glass">
           <strong>2x</strong>
-          <span>recognition awards for WMS automation</span>
-        </div>
-        <div>
-          <strong>2011</strong>
-          <span>BS Computer Engineering graduate</span>
+          <span>R&amp;R awards for automation &amp; operational excellence</span>
         </div>
       </section>
 
       <section class="section" id="skills" aria-labelledby="skills-title">
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <p class="section-kicker">Skills</p>
           <h2 id="skills-title">Tools and systems I work with</h2>
         </div>
         <div class="skill-grid">
-          <article class="card">
-            <h3>DevOps & Release</h3>
-            <p>Azure DevOps, Git, GitHub, JFrog Artifactory, RunDeck, HPOO, CentralOO, Ansible, release coordination.</p>
+          <article class="card glass reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="5" r="2" /><circle cx="6" cy="19" r="2" /><circle cx="18" cy="7" r="2" /><path d="M6 7v10M18 9c0 5-7 4-11 8" /></svg></span>
+            <h3>DevOps &amp; CI/CD</h3>
+            <ul class="chip-list small">
+              <li>Azure DevOps</li><li>Git / GitHub</li><li>Ansible</li><li>JFrog Artifactory</li><li>RunDeck</li><li>YAML pipelines</li><li>Release management</li>
+            </ul>
           </article>
-          <article class="card">
-            <h3>Monitoring & Operations</h3>
-            <p>ELK, Dynatrace, Nastel, IBM Workload Scheduler, alert creation, dashboards, and system health checks.</p>
+          <article class="card glass reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 19h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6 10a4.5 4.5 0 0 0 1 9z" /></svg></span>
+            <h3>Cloud &amp; Platforms</h3>
+            <ul class="chip-list small">
+              <li>AWS</li><li>AWS microservices</li><li>RHEL / Linux</li><li>Windows Server</li><li>SSH / RDP</li><li>DR synchronization</li>
+            </ul>
           </article>
-          <article class="card">
-            <h3>WMS & Logistics</h3>
-            <p>Manhattan WMS, Exacta WCS, Rocla FleetController, Digital Shipper, CMP, Parcel Carrier Optimization, and AWS-hosted Pro series integrations.</p>
+          <article class="card glass reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3" /><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" /></svg></span>
+            <h3>Databases &amp; Integrations</h3>
+            <ul class="chip-list small">
+              <li>Oracle PL/SQL</li><li>SQL Server</li><li>IBM MQ</li><li>REST APIs</li><li>Postman</li><li>XML</li><li>Wireshark</li>
+            </ul>
           </article>
-          <article class="card">
-            <h3>Scripting, APIs & Data</h3>
-            <p>PowerShell, Bash, Python, Oracle SQL/PL/SQL, SSMS, REST APIs, XML, Postman, Wireshark, stored procedures, and scheduled jobs.</p>
+          <article class="card glass reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4" /></svg></span>
+            <h3>Monitoring &amp; Observability</h3>
+            <ul class="chip-list small">
+              <li>ELK Stack</li><li>Splunk</li><li>Dynatrace</li><li>Nastel</li><li>IBM Workload Scheduler</li><li>Alerting &amp; dashboards</li>
+            </ul>
           </article>
-          <article class="card">
-            <h3>Cloud, Platforms & Security</h3>
-            <p>AWS Cloud Practitioner, AWS pods and farms, Linux RHEL 7, Windows Server, IBM MQ, Venafi, SSL/TLS certificates, SSH, RDP, and MobaXterm.</p>
+          <article class="card glass reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 17l6-5-6-5M12 19h8" /></svg></span>
+            <h3>Automation &amp; Scripting</h3>
+            <ul class="chip-list small">
+              <li>Bash</li><li>Python</li><li>PowerShell</li><li>YAML</li><li>Stored procedures</li><li>Scheduled jobs</li>
+            </ul>
           </article>
-          <article class="card">
-            <h3>ITSM & AI-assisted Workflows</h3>
-            <p>ServiceNow ITIL/ITSM, incident/change/problem management, Jira, Confluence, GitHub Copilot, Claude, and ChatGPT Codex.</p>
+          <article class="card glass reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z" /><path d="M9 12l2 2 4-4" /></svg></span>
+            <h3>Security &amp; ITSM</h3>
+            <ul class="chip-list small">
+              <li>ServiceNow</li><li>Incident / Change / Problem / Release</li><li>ITIL</li><li>Venafi</li><li>CyberArk</li><li>SSL/TLS</li>
+            </ul>
+          </article>
+          <article class="card glass reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /><path d="M8 9h8M8 13h5" /></svg></span>
+            <h3>Collaboration &amp; AI Tools</h3>
+            <ul class="chip-list small">
+              <li>Jira</li><li>Confluence</li><li>Teams / Slack</li><li>Agile / Scrum</li><li>GitHub Copilot</li><li>Claude</li><li>ChatGPT Codex</li>
+            </ul>
+          </article>
+          <article class="card glass reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8M12 13v8" /></svg></span>
+            <h3>Enterprise Platforms</h3>
+            <ul class="chip-list small">
+              <li>Manhattan WMS</li><li>Exacta WCS</li><li>Rocla AGV</li><li>DigitalShipper</li><li>CMP</li><li>Parcel Carrier Optimization</li>
+            </ul>
           </article>
         </div>
       </section>
 
-      <section class="section timeline-section" id="experience" aria-labelledby="experience-title">
-        <div class="section-heading">
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
           <p class="section-kicker">Experience</p>
           <h2 id="experience-title">Production-focused engineering experience</h2>
         </div>
         <div class="timeline">
-          <article class="timeline-item">
-            <span class="timeline-date">Mar 2024 - Present</span>
+          <article class="timeline-item glass reveal">
+            <span class="timeline-date">Mar 2024 – Present</span>
             <div>
-              <h3>Senior Software Engineer - DevOps Engineer</h3>
-              <p class="company">Accenture PH | Warehouse Management System</p>
-              <p>
-                Support Manhattan WMS across 9 US warehouses, including 40 production servers, 40 disaster-recovery
-                servers, and development, test, training, and production-like environments. Manage Azure DevOps and
-                Ansible deployments, vendor releases, fixpacks, stored procedures, certificates, IBM MQ, IBM Workload
-                Scheduler jobs, alerting, ELK dashboards, Splunk monitoring, and DR synchronization.
-              </p>
+              <h3>Senior Software Engineer / DevOps Engineer</h3>
+              <p class="company">Accenture PH · Enterprise application support &amp; DevOps</p>
+              <ul class="bullets">
+                <li>Provide L2/L3 support for enterprise warehouse, shipping, automation, and cloud-integrated applications serving U.S. distribution and e-commerce operations.</li>
+                <li>Deploy releases and fix packs through Azure DevOps, Ansible, and JFrog Artifactory across production, DR, and non-production environments, and keep DR in sync.</li>
+                <li>Administer Oracle and SQL Server databases; troubleshoot IBM MQ message flows, REST integrations, and certificates.</li>
+                <li>Automate repetitive operational work with Bash, Python, PowerShell, and YAML.</li>
+                <li>Improve monitoring and alerting with ELK, Splunk, and Dynatrace dashboards.</li>
+                <li>Write runbooks, playbooks, and operational procedures in Confluence and Jira.</li>
+              </ul>
+              <ul class="chip-list small">
+                <li>Azure DevOps</li><li>Ansible</li><li>JFrog</li><li>Oracle</li><li>SQL Server</li><li>IBM MQ</li><li>Splunk</li><li>Dynatrace</li>
+              </ul>
             </div>
           </article>
-          <article class="timeline-item">
-            <span class="timeline-date">Apr 2018 - Mar 2024</span>
+          <article class="timeline-item glass reveal">
+            <span class="timeline-date">Apr 2018 – Mar 2024</span>
             <div>
-              <h3>Senior Software Engineer - App/Cloud Support Senior Analyst</h3>
-              <p class="company">Accenture PH | Warehouse Management System</p>
-              <p>
-                Provided L2/L3 support for customer-facing warehouse operations across Manhattan WMS, Exacta WCS,
-                Rocla FleetController, Digital Shipper, CMP, Parcel Carrier Optimization, and AWS-hosted PackPro,
-                ReceiptPro, and YardPro services. Investigated application,
-                database, message-flow, performance, hardware, printer, scanner, conveyor, sensor, and robot issues;
-                coordinated fixes, onboarding, configuration changes, testing requests, and vendor releases through
-                ServiceNow, Jira, and Confluence. Produced weekly operational metrics, postmortem narratives,
-                environment documentation, playbooks, and security readiness signoffs.
-              </p>
+              <h3>Senior Software Engineer / App &amp; Cloud Support Senior Analyst</h3>
+              <p class="company">Accenture PH · Application &amp; cloud support</p>
+              <ul class="bullets">
+                <li>Delivered production support for enterprise warehouse-management and supply-chain platforms, including AWS-hosted services.</li>
+                <li>Handled incidents, service requests, and SLA-driven operational work through ServiceNow.</li>
+                <li>Supported testing, upgrades, vendor releases, and configuration changes.</li>
+                <li>Wrote troubleshooting guides, postmortem narratives, and operational documentation.</li>
+                <li>Worked with developers, analysts, vendors, and project teams to resolve application and integration issues.</li>
+              </ul>
+              <ul class="chip-list small">
+                <li>ServiceNow</li><li>AWS</li><li>Linux</li><li>Windows Server</li><li>Oracle PL/SQL</li><li>Jira</li><li>Confluence</li>
+              </ul>
             </div>
           </article>
-          <article class="timeline-item">
-            <span class="timeline-date">2011 - 2018</span>
+          <article class="timeline-item glass reveal">
+            <span class="timeline-date">2011 – 2018</span>
             <div>
-              <h3>Customer, Technical, and Data Support Roles</h3>
-              <p class="company">Telus International PH, Convergys PH, Jobstreet.com PH, IBM</p>
+              <h3>Customer, Technical &amp; Data Support Roles</h3>
+              <p class="company">Telus International PH · Convergys PH · Jobstreet.com PH · IBM</p>
               <p>
-                Built a strong foundation in customer support, technical troubleshooting, account assistance, data
-                accuracy, escalation handling, and clear communication under service expectations.
+                Built a strong foundation in technical troubleshooting, escalation handling, data accuracy, and clear
+                communication while meeting service targets.
               </p>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="section-kicker">Project Highlights</p>
-          <h2 id="projects-title">Work themes worth showcasing</h2>
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-heading reveal">
+          <p class="section-kicker">What I Do</p>
+          <h2 id="work-title">How I help engineering and operations teams</h2>
         </div>
         <div class="project-grid">
-          <article class="project-card">
-            <span>Automation</span>
-            <h3>Warehouse Platform Operations</h3>
+          <article class="project-card glass reveal">
+            <span class="tag">CI/CD</span>
+            <h3>Release &amp; Deployment Automation</h3>
             <p>
-              Supported enterprise warehouse operations across Manhattan WMS, Exacta WCS, Rocla AGV/FleetController,
-              and connected carrier and AWS-hosted cloud applications, including REST API integrations, with
-              responsibility for production, DR, and non-production environments.
+              Ship vendor releases, fix packs, stored procedure updates, scheduled jobs, and configuration changes
+              through Azure DevOps, Ansible, and JFrog Artifactory, with controlled promotion across environments.
             </p>
           </article>
-          <article class="project-card">
-            <span>CI/CD</span>
-            <h3>Deployment and Release Operations</h3>
+          <article class="project-card glass reveal">
+            <span class="tag">Observability</span>
+            <h3>Monitoring &amp; Alerting</h3>
             <p>
-              Deployed vendor releases, fixpacks, stored procedure updates, scheduled jobs, SDNs, and configuration
-              changes through Azure DevOps, Ansible, GitHub, and JFrog Artifactory across controlled environments.
+              Build ELK, Splunk, and Dynatrace dashboards and alerts that surface failed API calls, stuck MQ messages,
+              and health issues before users notice.
             </p>
           </article>
-          <article class="project-card">
-            <span>Observability</span>
-            <h3>Monitoring and Operational Visibility</h3>
+          <article class="project-card glass reveal">
+            <span class="tag">Reliability</span>
+            <h3>Production Support &amp; Incident Response</h3>
             <p>
-              Used Elasticsearch, Logstash, Kibana, Dynatrace, Splunk, and Nastel to monitor logs, inbound and outbound
-              calls, stuck MQ messages, alerting, and operational health during planned and unplanned activities.
+              Own L2/L3 triage, root-cause analysis, and change/problem records in ServiceNow, backed by clear runbooks
+              and postmortems so the same issue does not come back.
+            </p>
+          </article>
+          <article class="project-card glass reveal">
+            <span class="tag">Integration</span>
+            <h3>Databases, APIs &amp; Messaging</h3>
+            <p>
+              Troubleshoot data and message flows end to end across Oracle, SQL Server, IBM MQ, and REST APIs,
+              using Postman and Wireshark when the logs are not enough.
             </p>
           </article>
         </div>
       </section>
 
-      <section class="section github-section" id="github" aria-labelledby="github-title">
-        <div class="section-heading">
-          <p class="section-kicker">GitHub</p>
-          <h2 id="github-title">Code, scripts, and project activity</h2>
+      <section class="section" id="github" aria-labelledby="github-title">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Projects &amp; GitHub</p>
+          <h2 id="github-title">Things I've built outside of work</h2>
         </div>
-        <div class="github-panel">
+
+        <div class="github-panel glass reveal">
           <div>
             <h3>github.com/lextabi</h3>
             <p>
-              I use GitHub to collect portfolio code, scripts, automation examples, and future DevOps projects.
-              Public repositories can show the tools I use, languages I practice, and how my work evolves over time.
+              Side projects, automation scripts, and full-stack apps I build to keep learning, from PowerShell and
+              Python tooling to deployed Next.js and TypeScript web apps.
             </p>
             <div class="github-actions">
               <a class="button primary" href="https://github.com/lextabi" target="_blank" rel="noreferrer">View GitHub</a>
-              <a class="button secondary" href="https://github.com/lextabi?tab=repositories" target="_blank" rel="noreferrer">
-                Repositories
-              </a>
+              <a class="button secondary" href="https://github.com/lextabi?tab=repositories" target="_blank" rel="noreferrer">All Repositories</a>
             </div>
           </div>
-          <div class="github-stats" data-github-stats>
+          <div class="github-stats">
             <div>
               <strong data-github-repos>--</strong>
-              <span>Public repos</span>
+              <span>Repos</span>
             </div>
             <div>
-              <strong data-github-followers>--</strong>
-              <span>Followers</span>
+              <strong data-github-languages>--</strong>
+              <span>Languages</span>
             </div>
             <div>
-              <strong data-github-updated>Live</strong>
-              <span>Profile data</span>
+              <strong data-github-live>--</strong>
+              <span>Live demos</span>
             </div>
           </div>
         </div>
+
+        <h3 class="subheading reveal">Featured projects</h3>
+        <div class="featured-grid">
+          <article class="featured-card glass reveal">
+            <div class="featured-top">
+              <span class="lang"><i style="--dot: #3178c6"></i>TypeScript</span>
+              <span class="live-badge">Live</span>
+            </div>
+            <h4>Runners Diary</h4>
+            <p>
+              A running journal web app: log runs on a calendar, track pace and distance, view weekly charts, earn
+              achievement badges, and set monthly goals.
+            </p>
+            <ul class="chip-list small">
+              <li>Next.js</li><li>Supabase</li><li>Chart.js</li><li>Vercel</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://lextabi-runnersdiary.vercel.app" target="_blank" rel="noreferrer">Live demo ↗</a>
+              <a href="https://github.com/lextabi/Runners_Diary" target="_blank" rel="noreferrer">Source ↗</a>
+            </div>
+          </article>
+          <article class="featured-card glass reveal">
+            <div class="featured-top">
+              <span class="lang"><i style="--dot: #3178c6"></i>TypeScript</span>
+              <span class="live-badge">Live</span>
+            </div>
+            <h4>PayEngine</h4>
+            <p>
+              A self-service payroll calculator: users sign up, set salary and contribution preferences, and preview
+              payroll with automatic tax computation driven by configurable Philippine rule tables.
+            </p>
+            <ul class="chip-list small">
+              <li>TypeScript</li><li>Auth</li><li>Rule tables</li><li>Vercel</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://payengine-eight.vercel.app" target="_blank" rel="noreferrer">Live demo ↗</a>
+              <a href="https://github.com/lextabi/PayEngine" target="_blank" rel="noreferrer">Source ↗</a>
+            </div>
+          </article>
+          <article class="featured-card glass reveal">
+            <div class="featured-top">
+              <span class="lang"><i style="--dot: #012456"></i>PowerShell</span>
+            </div>
+            <h4>PowerShell Automation</h4>
+            <p>
+              A growing collection of practical PowerShell scripts for Windows maintenance, system tasks, and
+              everyday workflow automation, each documented with sample output.
+            </p>
+            <ul class="chip-list small">
+              <li>PowerShell</li><li>Windows</li><li>Automation</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/lextabi/prj_powshl" target="_blank" rel="noreferrer">Source ↗</a>
+            </div>
+          </article>
+          <article class="featured-card glass reveal">
+            <div class="featured-top">
+              <span class="lang"><i style="--dot: #3572a5"></i>Python</span>
+            </div>
+            <h4>Python CLI Toolkit</h4>
+            <p>
+              Python command-line scripts and mini-projects for utilities, calculations, and general-purpose
+              automation, built with the standard library only.
+            </p>
+            <ul class="chip-list small">
+              <li>Python 3</li><li>CLI</li><li>Standard library</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/lextabi/prj_python" target="_blank" rel="noreferrer">Source ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="subheading reveal">More on GitHub</h3>
         <div class="repo-list" data-github-repo-list>
-          <article>
-            <h3>Recent public repositories</h3>
-            <p>Loading GitHub repositories...</p>
+          <article class="repo-card glass">
+            <h4>Loading repositories…</h4>
+            <p>Fetching the latest public repositories from GitHub.</p>
           </article>
         </div>
       </section>
 
-      <section class="section hobbies-section" id="hobbies" aria-labelledby="hobbies-title">
-        <div class="section-heading">
-          <p class="section-kicker">Beyond Engineering</p>
-          <h2 id="hobbies-title">Content creator focused on running, travel, and local food experiences.</h2>
+      <section class="section achievements" aria-labelledby="achievements-title">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Achievements</p>
+          <h2 id="achievements-title">Certifications, recognition &amp; education</h2>
         </div>
-        <div class="hobbies-panel">
+        <div class="achievement-list">
+          <article class="glass reveal">
+            <span class="tag">Certification</span>
+            <h3>AWS Certified Cloud Practitioner</h3>
+            <p>Issued February 2025. Valid through February 2028.</p>
+          </article>
+          <article class="glass reveal">
+            <span class="tag">Award</span>
+            <h3>Likha R&amp;R Award</h3>
+            <p>Recognized in 2023 for delivering WMS automation on a new automation framework.</p>
+          </article>
+          <article class="glass reveal">
+            <span class="tag">Award</span>
+            <h3>R&amp;R Award</h3>
+            <p>Recognized in 2020 for automation and composure during high-pressure peak-season support.</p>
+          </article>
+          <article class="glass reveal">
+            <span class="tag">Education</span>
+            <h3>BS Computer Engineering</h3>
+            <p>STI College. Best Thesis and Programmer of the Year for a PC-based bass guitar tutor app (VB, C#).</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="hobbies" aria-labelledby="hobbies-title">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Beyond Engineering</p>
+          <h2 id="hobbies-title">Content creator focused on running, travel, and local food.</h2>
+        </div>
+        <div class="hobbies-panel glass reveal">
           <div>
-            <h3>Running, Travel & Foodtrip</h3>
+            <h3>Running, Travel &amp; Foodtrip</h3>
             <p>
-              Outside of engineering, I create lifestyle content around running, travel, and food experiences across
-              the Philippines. It gives me a creative outlet for documenting local places, routes, meals, and everyday
-              discoveries with consistency, curiosity, and a practical eye for storytelling.
+              Outside of engineering, I create lifestyle content about running, travel, and food across the
+              Philippines, documenting local places, routes, and meals with consistency and curiosity.
             </p>
             <p>
-              I present this as part of my portfolio because it reflects communication, discipline, exploration, and
-              the ability to build a personal brand beyond technical work.
+              It keeps me disciplined, and it builds the same communication and storytelling skills I use when
+              writing runbooks and explaining incidents to stakeholders.
             </p>
             <a class="button secondary" href="https://www.facebook.com/profile.php?id=61578297215320" target="_blank" rel="noreferrer">
               Visit Facebook Page
@@ -294,57 +501,28 @@
           </div>
         </div>
       </section>
-      <section class="section achievements" aria-labelledby="achievements-title">
-        <div class="section-heading">
-          <p class="section-kicker">Achievements</p>
-          <h2 id="achievements-title">Certifications and recognition</h2>
-        </div>
-        <div class="achievement-list">
-          <article>
-            <h3>AWS Certified Cloud Practitioner</h3>
-            <p>Issued February 22, 2025. Valid through February 22, 2028.</p>
-          </article>
-          <article>
-            <h3>Likha R&R Award</h3>
-            <p>Recognized in August 2023 for WMS AAAM automation using a new framework.</p>
-          </article>
-          <article>
-            <h3>R&R Award</h3>
-            <p>Recognized in March 2020 for WMS automation and composure during high-pressure holiday support.</p>
-          </article>
-          <article>
-            <h3>Programmer of the Year</h3>
-            <p>Recognized for a PC-based bass guitar tutor application built during college.</p>
-          </article>
-        </div>
-      </section>
 
-      <section class="contact" id="contact" aria-labelledby="contact-title">
-        <div>
-          <p class="section-kicker">Contact</p>
-          <h2 id="contact-title">Let us connect.</h2>
-          <p>
-            I am open to roles and projects involving DevOps, CI/CD, cloud/application support, warehouse systems,
-            monitoring, automation, and operational reliability.
-          </p>
-        </div>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:lexjosephtabi@yahoo.com">Email Me</a>
-          <a class="button secondary" href="https://www.linkedin.com/in/lexjosephtabi/" target="_blank" rel="noreferrer">
-            LinkedIn
-          </a>
-          <a class="button secondary" href="https://github.com/lextabi" target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-          <a class="button secondary" href="https://www.facebook.com/profile.php?id=61578297215320" target="_blank" rel="noreferrer">
-            Facebook Page
-          </a>
+      <section class="section contact-wrap" id="contact" aria-labelledby="contact-title">
+        <div class="contact glass reveal">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-title">Let's work together.</h2>
+            <p>
+              I'm open to roles and projects in DevOps, SRE, CI/CD, cloud and application support, monitoring, and
+              automation, in any industry where reliability matters.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:lexjosephtabi@yahoo.com">Email Me</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/lexjosephtabi/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button secondary" href="https://github.com/lextabi" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span data-year></span> Lex Joseph Tabi. Built for GitHub Pages.</p>
+      <p>&copy; <span data-year></span> Lex Joseph Tabi · Built with HTML, CSS &amp; vanilla JS · Hosted on GitHub Pages</p>
     </footer>
 
     <script src="script.js"></script>

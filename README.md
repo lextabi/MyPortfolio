@@ -1,45 +1,44 @@
 # MyPortfolio
 
-Personal portfolio website for Lex Joseph Tabi, focused on DevOps, application support, automation, and enterprise warehouse systems.
+Personal portfolio website for Lex Joseph Tabi, focused on DevOps, CI/CD, application support, automation, and monitoring for business-critical enterprise applications.
 
 ## Overview
 
-This is a static portfolio site designed for GitHub Pages. It highlights experience in CI/CD deployment operations, Warehouse Management Systems, automation platforms, monitoring and observability, incident/change/problem management, cloud and infrastructure support, and operational documentation.
+This is a static portfolio site designed for GitHub Pages. It highlights experience in CI/CD and release automation, L2/L3 production support, databases and integrations (Oracle, SQL Server, IBM MQ, REST APIs), monitoring and observability, incident/change/problem management, cloud and infrastructure support, and operational documentation.
 
 The site also includes a professional Beyond Engineering section for Lex's content creator work around running, travel, and food experiences across the Philippines.
 
 ## Current Sections
 
-- Hero profile and recruiter contact CTA
-- About
+- Hero with availability status, core tech strip, and profile card
+- About, including the types of systems supported
 - Professional highlights
-- Skills
-- Experience
-- Project highlights
-- GitHub profile and public repository activity
+- Skills (8 grouped categories)
+- Experience timeline
+- What I Do (capability cards)
+- Projects & GitHub: featured projects with live demo links, plus other public repos loaded from the GitHub API
+- Achievements, certifications, and education
 - Beyond Engineering / content creator section
-- Achievements
 - Contact links
 
 ## Files
 
 - `index.html` - main portfolio page
 - `styles.css` - site styling and responsive layout
-- `script.js` - mobile navigation, footer year, and GitHub profile/repository loading
+- `script.js` - mobile navigation, active-section highlighting, scroll reveal, footer year, and GitHub repository loading (cached per session to stay under the API rate limit)
 - `assets/` - public-safe visual assets
 
 ## Latest Session Changes
 
-Updated from the latest resume provided on June 25, 2026:
+Updated September 27, 2026 from the latest resume:
 
-- Refreshed professional positioning from Senior Software Engineer / DevOps Engineer to Senior DevOps Engineer / Application Support & Automation Engineer.
-- Updated the hero, About, Skills, Experience, Projects, and Contact sections with the latest resume details.
-- Added 8+ years of experience messaging.
-- Added newer tools and focus areas: CI/CD, Azure DevOps, Git, GitHub, GitHub Copilot, Claude, ChatGPT Codex, JFrog Artifactory, RunDeck, HPOO, CentralOO, Ansible, Postman, Wireshark, REST APIs, XML, Exacta WCS, AutoStore, Rocla FleetController, Venafi, CyberArk, Keeper, ELK, and Dynatrace.
-- Reworked project highlights around warehouse automation, deployment and release operations, and monitoring/operational visibility.
-- Added a Beyond Engineering section for content creation around running, travel, and foodtrip experiences in the Philippines.
-- Added Facebook page links for the content creator section and contact area.
-- Added styling for the new hobbies/content creator section, including responsive layout support.
+- Redesigned the UI with a glassmorphism style: ambient gradient background, frosted glass cards, floating pill navigation, gradient headline, rounded buttons and chips, scroll-reveal animations, and active-section nav highlighting. Honors `prefers-reduced-motion`.
+- Repositioned the messaging from warehouse-system specialist to enterprise application support and DevOps, keeping warehouse, shipping, and e-commerce as the most recent domain.
+- Rebuilt Skills into eight grouped categories aligned with the resume, and Experience into scannable bullets.
+- Replaced project themes with "What I Do" capability cards.
+- Added hand-picked featured projects with live demo and source links; the remaining repos load from the GitHub API with language colors and live-demo detection.
+- Removed client infrastructure details and internal project names; moved the Facebook link out of the professional contact area.
+- Added Open Graph tags, a favicon, a skip link, and accessibility improvements to the mobile menu.
 
 ## Local Preview
 
