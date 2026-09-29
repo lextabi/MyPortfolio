@@ -13,9 +13,10 @@ The site also includes a professional Beyond Engineering section for Lex's conte
 - Hero with availability status, core tech strip, and profile card
 - About, including the types of systems supported
 - Professional highlights
-- Skills (8 grouped categories)
+- Skills (9 grouped categories, including App Development)
 - Experience timeline
 - What I Do (capability cards)
+- Tabi Studio: Lex's independent Android app studio, with app cards for Runling and MT App (screenshots, engineering highlights, product and release-notes links)
 - Projects & GitHub: featured projects with live demo links, plus other public repos loaded from the GitHub API
 - Achievements, certifications, and education
 - Beyond Engineering / content creator section
@@ -26,9 +27,15 @@ The site also includes a professional Beyond Engineering section for Lex's conte
 - `index.html` - main portfolio page
 - `styles.css` - site styling and responsive layout
 - `script.js` - mobile navigation, active-section highlighting, scroll reveal, footer year, and GitHub repository loading (cached per session to stay under the API rate limit)
-- `assets/` - public-safe visual assets
+- `assets/` - public-safe visual assets; `assets/apps/` holds the Tabi Studio mark, app icons, and resized app screenshots (480px JPEGs) copied from the `tabistudio` site
 
 ## Latest Session Changes
+
+Updated September 29, 2026:
+
+- Added a Tabi Studio section, framed as a side venture (founder and solo developer), with Runling (Godot 4, Kotlin, Supabase) and MT App (Flutter, SQLite, 188 tests) in open testing, and the engineering practices behind them.
+- Added a "Tabi Studio" nav link, an App Development skills card, and a Tabi Studio mention in About and the meta description.
+- The studio repos (`tabistudio`, `Runling_release`, `mt_app_release`) are excluded from the auto-loaded "More on GitHub" list since they are covered by the new section.
 
 Updated September 27, 2026 from the latest resume:
 

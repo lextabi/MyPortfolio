@@ -1,6 +1,14 @@
 const GITHUB_USER = "lextabi";
-// Repos already shown as hand-written featured cards in index.html.
-const FEATURED_REPOS = ["Runners_Diary", "PayEngine", "prj_powshl", "prj_python"];
+// Repos already shown as hand-written cards in index.html (featured projects and Tabi Studio).
+const FEATURED_REPOS = [
+  "Runners_Diary",
+  "PayEngine",
+  "prj_powshl",
+  "prj_python",
+  "tabistudio",
+  "Runling_release",
+  "mt_app_release",
+];
 const CACHE_KEY = "gh-cache-v1";
 const CACHE_TTL_MS = 30 * 60 * 1000;
 

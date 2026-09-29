@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Lex Joseph Tabi, Senior DevOps Engineer and Application Support & Automation Engineer with 8+ years keeping business-critical enterprise applications stable, automated, and observable."
+      content="Portfolio of Lex Joseph Tabi, Senior DevOps Engineer and Application Support & Automation Engineer with 8+ years keeping business-critical enterprise applications stable, automated, and observable. Founder of Tabi Studio, an independent Android app studio."
     />
     <meta name="theme-color" content="#070b12" />
     <title>Lex Joseph Tabi | Senior DevOps Engineer & Application Support Engineer</title>
@@ -62,6 +62,7 @@
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#work">What I Do</a>
+        <a href="#studio">Tabi Studio</a>
         <a href="#github">Projects</a>
         <a href="#hobbies">Beyond Work</a>
         <a class="nav-cta" href="#contact">Contact</a>
@@ -132,6 +133,10 @@
             Most recently that has meant high-volume warehouse, shipping, and e-commerce platforms for U.S. operations.
             The practices carry over to any system where uptime matters: automated deployments, useful alerts,
             clear runbooks, and fast, calm incident response.
+          </p>
+          <p>
+            Outside my day job I run <a class="text-link" href="#studio">Tabi Studio</a>, where I build and ship my own
+            Android apps end to end, from design and backend to signed releases.
           </p>
           <p class="support-label">Systems I support</p>
           <ul class="chip-list">
@@ -219,6 +224,13 @@
             <h3>Collaboration &amp; AI Tools</h3>
             <ul class="chip-list small">
               <li>Jira</li><li>Confluence</li><li>Teams / Slack</li><li>Agile / Scrum</li><li>GitHub Copilot</li><li>Claude</li><li>ChatGPT Codex</li>
+            </ul>
+          </article>
+          <article class="card glass reveal">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3" /><path d="M11 18h2" /></svg></span>
+            <h3>App Development</h3>
+            <ul class="chip-list small">
+              <li>Flutter / Dart</li><li>Godot / GDScript</li><li>Kotlin</li><li>TypeScript</li><li>Next.js</li><li>Supabase</li><li>SQLite</li>
             </ul>
           </article>
           <article class="card glass reveal">
@@ -327,6 +339,113 @@
         </div>
       </section>
 
+      <section class="section" id="studio" aria-labelledby="studio-title">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Tabi Studio</p>
+          <h2 id="studio-title">I also design, build, and ship my own Android apps.</h2>
+        </div>
+
+        <div class="studio-panel glass reveal">
+          <div class="studio-intro">
+            <div class="studio-brand">
+              <span class="studio-mark"><img src="assets/apps/tabi-mark-white.svg" alt="" width="30" height="30" /></span>
+              <div>
+                <h3>Tabi Studio</h3>
+                <p class="company">Founder &amp; solo developer · 2026 – Present</p>
+              </div>
+            </div>
+            <p>
+              Tabi Studio is my independent app studio, a side venture where I take products from idea to release on
+              my own: product design, code, backend, testing, signed releases, documentation, and tester support.
+              Two apps are in open testing on Android with real users.
+            </p>
+            <div class="github-actions">
+              <a class="button primary" href="https://lextabi.github.io/tabistudio/" target="_blank" rel="noreferrer">Visit Tabi Studio</a>
+            </div>
+          </div>
+          <div class="studio-practices">
+            <p class="support-label">The same discipline I bring to production</p>
+            <ul class="bullets">
+              <li>Scripted, repeatable release builds with signed APKs, version bumping, and changelogs</li>
+              <li>Server-authoritative backend with versioned database migrations</li>
+              <li>Business logic kept in pure functions and covered by automated tests</li>
+              <li>Privacy by design: published privacy policies, offline-first data, encrypted backups</li>
+              <li>Open testing with a tester feedback loop before a Play Store launch</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="app-grid">
+          <article class="app-card glass reveal">
+            <div class="app-shots" aria-hidden="true">
+              <img src="assets/apps/runling-home.jpg" alt="" width="480" height="1067" loading="lazy" />
+              <img src="assets/apps/runling-race.jpg" alt="" width="480" height="1067" loading="lazy" />
+            </div>
+            <div class="app-body">
+              <div class="app-head">
+                <img class="app-icon" src="assets/apps/runling.svg" alt="" width="56" height="56" />
+                <div>
+                  <h4>Runling</h4>
+                  <p>2D running life-sim powered by real steps</p>
+                </div>
+              </div>
+              <span class="live-badge">Open testing · v0.11</span>
+              <p>
+                Players build a runner that looks like them, then feed, train, and race it. Their real daily steps
+                from Health Connect set the runner's fitness, so walking more makes them stronger.
+              </p>
+              <ul class="bullets">
+                <li>Godot 4 client plus a custom Kotlin plugin that reads steps from Android Health Connect</li>
+                <li>Supabase backend (Postgres, email-code accounts) with a TypeScript edge function that owns all game rules and saves</li>
+                <li>Daily events with real players, simulated AI races, and an economy tuned with a 30-day balance model</li>
+                <li>PowerShell build, release, and deploy scripts; Python tooling for versioning and asset sync</li>
+              </ul>
+              <ul class="chip-list small">
+                <li>Godot 4</li><li>GDScript</li><li>Kotlin</li><li>Supabase</li><li>PostgreSQL</li><li>TypeScript</li><li>PowerShell</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://lextabi.github.io/tabistudio/runling/" target="_blank" rel="noreferrer">Product page ↗</a>
+                <a href="https://github.com/lextabi/Runling_release" target="_blank" rel="noreferrer">Release notes ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app-card glass reveal">
+            <div class="app-shots" aria-hidden="true">
+              <img src="assets/apps/mtapp-home.jpg" alt="" width="480" height="1067" loading="lazy" />
+              <img src="assets/apps/mtapp-reports.jpg" alt="" width="480" height="1067" loading="lazy" />
+            </div>
+            <div class="app-body">
+              <div class="app-head">
+                <img class="app-icon" src="assets/apps/mt-app.svg" alt="" width="56" height="56" />
+                <div>
+                  <h4>MT App</h4>
+                  <p>Private, offline-first money tracker</p>
+                </div>
+              </div>
+              <span class="live-badge">Open testing · v0.3</span>
+              <p>
+                Budgets, bills, savings goals, receipts, and crypto in one place, with a "safe to spend today" figure
+                until the next payday. No sign-up, and all data stays on the phone.
+              </p>
+              <ul class="bullets">
+                <li>Flutter app with Riverpod state and a typed SQLite database (drift) with schema migrations</li>
+                <li>Money stored as integer centavos, balances computed instead of stored, and 188 unit, database, and widget tests</li>
+                <li>On-device receipt scanning with ML Kit, a home-screen widget, bill reminders, and CSV import/export</li>
+                <li>AES-256-GCM encrypted backups and biometric app lock</li>
+              </ul>
+              <ul class="chip-list small">
+                <li>Flutter</li><li>Dart</li><li>Riverpod</li><li>SQLite</li><li>ML Kit</li><li>AES-256</li><li>Android</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://lextabi.github.io/tabistudio/mt-app/" target="_blank" rel="noreferrer">Product page ↗</a>
+                <a href="https://github.com/lextabi/mt_app_release" target="_blank" rel="noreferrer">Release notes ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="section" id="github" aria-labelledby="github-title">
         <div class="section-heading reveal">
           <p class="section-kicker">Projects &amp; GitHub</p>
@@ -337,8 +456,8 @@
           <div>
             <h3>github.com/lextabi</h3>
             <p>
-              Side projects, automation scripts, and full-stack apps I build to keep learning, from PowerShell and
-              Python tooling to deployed Next.js and TypeScript web apps.
+              Web apps, automation scripts, and learning projects, from PowerShell and Python tooling to deployed
+              Next.js and TypeScript web apps. Tabi Studio's app source is private; release notes are public.
             </p>
             <div class="github-actions">
               <a class="button primary" href="https://github.com/lextabi" target="_blank" rel="noreferrer">View GitHub</a>

@@ -765,6 +765,157 @@ h1 {
   color: var(--teal);
 }
 
+/* ---------- Tabi Studio ---------- */
+
+.text-link {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.studio-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 460px);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.studio-intro {
+  padding: 30px;
+}
+
+.studio-intro p {
+  color: var(--muted);
+}
+
+.studio-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.studio-brand h3 {
+  margin-bottom: 2px;
+  font-size: 1.35rem;
+}
+
+.studio-brand .company {
+  margin-bottom: 0;
+}
+
+.studio-mark {
+  display: grid;
+  flex: none;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #3b3fa8, #5b5fd6);
+  box-shadow: 0 10px 30px rgba(91, 95, 214, 0.3);
+}
+
+.studio-practices {
+  padding: 30px;
+  border-left: 1px solid var(--line);
+  background: linear-gradient(145deg, rgba(139, 124, 246, 0.08), transparent);
+}
+
+.studio-practices .support-label {
+  margin-top: 0;
+}
+
+.studio-practices .bullets {
+  margin-bottom: 0;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.app-card:hover {
+  border-color: rgba(72, 215, 197, 0.4);
+  box-shadow: var(--shadow), 0 0 0 1px rgba(72, 215, 197, 0.15), 0 20px 50px rgba(72, 215, 197, 0.08);
+  transform: translateY(-4px);
+}
+
+/* Two phone screenshots, cropped to the top of each screen. */
+.app-shots {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  padding: 26px 26px 0;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(72, 215, 197, 0.08), rgba(139, 124, 246, 0.06));
+}
+
+.app-shots img {
+  width: min(44%, 200px);
+  aspect-ratio: 9 / 13;
+  border: 1px solid var(--glass-border);
+  border-bottom: 0;
+  border-radius: 18px 18px 0 0;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 26px;
+}
+
+.app-body > p {
+  color: var(--muted);
+}
+
+.app-body .live-badge {
+  align-self: flex-start;
+  margin-bottom: 14px;
+}
+
+.app-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.app-icon {
+  flex: none;
+  border-radius: 14px;
+}
+
+.app-head h4 {
+  margin-bottom: 0;
+  font-size: 1.3rem;
+}
+
+.app-head p {
+  margin-bottom: 0;
+  color: var(--steel);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.app-body .chip-list {
+  margin-top: auto;
+}
+
 /* ---------- GitHub ---------- */
 
 .github-panel {
@@ -1107,8 +1258,14 @@ h1 {
   .hero-layout,
   .contact,
   .github-panel,
+  .studio-panel,
   .hobbies-panel {
     grid-template-columns: 1fr;
+  }
+
+  .studio-practices {
+    border-top: 1px solid var(--line);
+    border-left: 0;
   }
 
   .profile-card {
@@ -1133,7 +1290,8 @@ h1 {
 
 @media (max-width: 720px) {
   .project-grid,
-  .featured-grid {
+  .featured-grid,
+  .app-grid {
     grid-template-columns: 1fr;
   }
 
