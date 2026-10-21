@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Lex Joseph Tabi, Senior DevOps Engineer and Application Support & Automation Engineer with 8+ years keeping business-critical enterprise applications stable, automated, and observable. Founder of Tabi Studio, an independent Android app studio."
+      content="Portfolio of Lex Joseph Tabi, Senior DevOps Engineer and Application Support & Automation Engineer with 8+ years keeping business-critical enterprise applications stable, automated, and observable. Founder of Tabi Studio, an independent Android app studio hosted and managed on Microsoft Azure, and builder of click-to-chat funnel websites."
     />
     <meta name="theme-color" content="#070b12" />
     <title>Lex Joseph Tabi | Senior DevOps Engineer & Application Support Engineer</title>
@@ -63,6 +63,7 @@
         <a href="#experience">Experience</a>
         <a href="#work">What I Do</a>
         <a href="#studio">Tabi Studio</a>
+        <a href="#funnels">Funnels</a>
         <a href="#github">Projects</a>
         <a href="#hobbies">Beyond Work</a>
         <a class="nav-cta" href="#contact">Contact</a>
@@ -95,6 +96,7 @@
                 <li>Azure DevOps</li>
                 <li>Ansible</li>
                 <li>AWS</li>
+                <li>Azure</li>
                 <li>RHEL / Linux</li>
                 <li>Oracle &amp; SQL Server</li>
                 <li>IBM MQ</li>
@@ -104,8 +106,8 @@
             </div>
             <aside class="profile-card glass" aria-label="Professional portrait of Lex Joseph Tabi">
               <picture>
-                <source srcset="assets/lex-profile.webp" type="image/webp" />
-                <img src="assets/lex-profile.png" alt="Lex Joseph Tabi professional portrait" width="1402" height="1122" fetchpriority="high" />
+                <source srcset="assets/lex-headshot.webp" type="image/webp" />
+                <img src="assets/lex-headshot.jpg" alt="Lex Joseph Tabi professional portrait" width="912" height="1020" fetchpriority="high" />
               </picture>
               <div class="profile-meta">
                 <strong>Lex Joseph Tabi</strong>
@@ -139,7 +141,9 @@
           </p>
           <p>
             Outside my day job I run <a class="text-link" href="#studio">Tabi Studio</a>, where I build and ship my own
-            Android apps end to end, from design and backend to signed releases.
+            Android apps end to end, from design and backend to signed releases. The studio's website and serverless
+            API run on Microsoft Azure, which I deploy and manage myself. I also build
+            <a class="text-link" href="#funnels">click-to-chat funnel websites</a> for small businesses.
           </p>
           <p class="support-label">Systems I support</p>
           <ul class="chip-list">
@@ -184,14 +188,14 @@
             <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="5" r="2" /><circle cx="6" cy="19" r="2" /><circle cx="18" cy="7" r="2" /><path d="M6 7v10M18 9c0 5-7 4-11 8" /></svg></span>
             <h3>DevOps &amp; CI/CD</h3>
             <ul class="chip-list small">
-              <li>Azure DevOps</li><li>Git / GitHub</li><li>Ansible</li><li>JFrog Artifactory</li><li>RunDeck</li><li>YAML pipelines</li><li>Release management</li>
+              <li>Azure DevOps</li><li>GitHub Actions</li><li>Git / GitHub</li><li>Ansible</li><li>JFrog Artifactory</li><li>RunDeck</li><li>YAML pipelines</li><li>Release management</li>
             </ul>
           </article>
           <article class="card glass reveal">
             <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 19h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6 10a4.5 4.5 0 0 0 1 9z" /></svg></span>
             <h3>Cloud &amp; Platforms</h3>
             <ul class="chip-list small">
-              <li>AWS</li><li>AWS microservices</li><li>RHEL / Linux</li><li>Windows Server</li><li>SSH / RDP</li><li>DR synchronization</li>
+              <li>AWS</li><li>AWS microservices</li><li>Azure Static Web Apps</li><li>Azure Functions</li><li>Azure Table Storage</li><li>RHEL / Linux</li><li>Windows Server</li><li>SSH / RDP</li><li>DR synchronization</li>
             </ul>
           </article>
           <article class="card glass reveal">
@@ -360,7 +364,7 @@
             <p>
               Tabi Studio is my independent app studio, a side venture where I take products from idea to release on
               my own: product design, code, backend, testing, signed releases, documentation, and tester support.
-              Two apps are in open testing on Android with real users.
+              Four apps are in open testing on Android with real users: Runling, MT App, SyntaxDeck, and Calm Crew.
             </p>
             <div class="github-actions">
               <a class="button primary" href="https://proud-glacier-07ba1b700.3.azurestaticapps.net/" target="_blank" rel="noreferrer">Visit Tabi Studio</a>
@@ -370,12 +374,44 @@
             <p class="support-label">The same discipline I bring to production</p>
             <ul class="bullets">
               <li>Scripted, repeatable release builds with signed APKs, version bumping, and changelogs</li>
+              <li>Every release published with its APK's SHA-256 checksum so testers can verify downloads</li>
               <li>Server-authoritative backend with versioned database migrations</li>
-              <li>Business logic kept in pure functions and covered by automated tests</li>
               <li>Privacy by design: published privacy policies, offline-first data, encrypted backups</li>
               <li>Open testing with a tester feedback loop before a Play Store launch</li>
             </ul>
           </div>
+        </div>
+
+        <div class="azure-panel glass reveal">
+          <div class="azure-head">
+            <span class="azure-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 19h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6 10a4.5 4.5 0 0 0 1 9z" /></svg></span>
+            <div>
+              <span class="live-badge">Live on Microsoft Azure</span>
+              <h3>Tabi Studio runs on infrastructure I deploy and manage</h3>
+              <p>
+                In October 2026 I moved the studio website off GitHub Pages and onto Azure, and added a serverless
+                API for tester feedback. I'm now studying for the Microsoft Azure Fundamentals (AZ-900) exam.
+              </p>
+            </div>
+          </div>
+          <ul class="azure-grid">
+            <li>
+              <strong>Azure Static Web Apps</strong>
+              <span>Hosts the studio site, every app page, changelogs, and the privacy and account-deletion pages that Google Play links to.</span>
+            </li>
+            <li>
+              <strong>GitHub Actions CI/CD</strong>
+              <span>Every push to main deploys in about a minute, and each pull request gets its own preview environment.</span>
+            </li>
+            <li>
+              <strong>Azure Functions</strong>
+              <span>A Node.js <code>POST /api/feedback</code> endpoint that validates input before saving anything.</span>
+            </li>
+            <li>
+              <strong>Azure Table Storage</strong>
+              <span>Stores feedback by app. The connection string is an app setting in Azure, never in the code.</span>
+            </li>
+          </ul>
         </div>
 
         <div class="app-grid">
@@ -392,7 +428,7 @@
                   <p>2D running life-sim powered by real steps</p>
                 </div>
               </div>
-              <span class="live-badge">Open testing · v0.11</span>
+              <span class="live-badge">Open testing · v0.18</span>
               <p>
                 Players build a runner that looks like them, then feed, train, and race it. Their real daily steps
                 from Health Connect set the runner's fitness, so walking more makes them stronger.
@@ -408,7 +444,7 @@
               </ul>
               <div class="card-links">
                 <a href="https://proud-glacier-07ba1b700.3.azurestaticapps.net/runling/" target="_blank" rel="noreferrer">Product page<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
-                <a href="https://github.com/lextabi/Runling_release" target="_blank" rel="noreferrer">Release notes<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
+                <a href="https://proud-glacier-07ba1b700.3.azurestaticapps.net/runling/changelog.html" target="_blank" rel="noreferrer">What's new<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
               </div>
             </div>
           </article>
@@ -426,14 +462,14 @@
                   <p>Private, offline-first money tracker</p>
                 </div>
               </div>
-              <span class="live-badge">Open testing · v0.3</span>
+              <span class="live-badge">Open testing · v0.3.2</span>
               <p>
                 Budgets, bills, savings goals, receipts, and crypto in one place, with a "safe to spend today" figure
                 until the next payday. No sign-up, and all data stays on the phone.
               </p>
               <ul class="bullets">
                 <li>Flutter app with Riverpod state and a typed SQLite database (drift) with schema migrations</li>
-                <li>Money stored as integer centavos, balances computed instead of stored, and 188 unit, database, and widget tests</li>
+                <li>Money stored as integer centavos, balances computed instead of stored, and unit, database, and widget tests</li>
                 <li>On-device receipt scanning with ML Kit, a home-screen widget, bill reminders, and CSV import/export</li>
                 <li>AES-256-GCM encrypted backups and biometric app lock</li>
               </ul>
@@ -442,7 +478,102 @@
               </ul>
               <div class="card-links">
                 <a href="https://proud-glacier-07ba1b700.3.azurestaticapps.net/mt-app/" target="_blank" rel="noreferrer">Product page<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
-                <a href="https://github.com/lextabi/mt_app_release" target="_blank" rel="noreferrer">Release notes<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
+                <a href="https://proud-glacier-07ba1b700.3.azurestaticapps.net/mt-app/changelog.html" target="_blank" rel="noreferrer">What's new<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="app-more glass reveal">
+          <p class="support-label">Also in open testing</p>
+          <ul>
+            <li>
+              <a href="https://proud-glacier-07ba1b700.3.azurestaticapps.net/syntaxdeck/" target="_blank" rel="noreferrer"><strong>SyntaxDeck</strong><span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
+              <span>An offline cheat sheet for coders: Linux and Bash commands with tested examples. v0.1</span>
+            </li>
+            <li>
+              <a href="https://proud-glacier-07ba1b700.3.azurestaticapps.net/calm-crew/" target="_blank" rel="noreferrer"><strong>Calm Crew</strong><span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
+              <span>A calm, sensory-friendly learning app for children on the autism spectrum, made for tablets. v0.4</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="funnels" aria-labelledby="funnels-title">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Funnels &amp; Web Design</p>
+          <h2 id="funnels-title">Landing pages that turn visitors into conversations.</h2>
+        </div>
+
+        <p class="section-lead reveal">
+          I design and build sales funnels for small businesses, starting with click-to-chat: one focused page that
+          answers the buyer's questions, then hands them to Messenger, WhatsApp, or Viber with their order or inquiry
+          already written. Plain HTML, CSS, and JavaScript, tested from 360&nbsp;px phones to wide desktops. More
+          funnel types are on the way.
+        </p>
+
+        <div class="app-grid">
+          <article class="app-card glass reveal">
+            <div class="funnel-shot">
+              <picture>
+                <source srcset="assets/funnels/golden-compound.webp" type="image/webp" />
+                <img src="assets/funnels/golden-compound.jpg" alt="The Golden Compound landing page: a garlic herb butter brand with an Order on Messenger button" width="960" height="600" loading="lazy" />
+              </picture>
+            </div>
+            <div class="app-body">
+              <div class="funnel-tags">
+                <span class="tag">Client project</span>
+                <span class="live-badge">Live on Azure</span>
+              </div>
+              <h4>The Golden Compound</h4>
+              <p>
+                A click-to-chat funnel for a homemade garlic herb butter brand that sells by pre-order over Facebook
+                Messenger. The page sells; the owner closes the order in chat.
+              </p>
+              <ul class="bullets">
+                <li>Price list doubles as an order builder: + / − steppers, a running total, and a ready-made order message</li>
+                <li>Messenger links can't pre-fill text, so the order is copied to the clipboard with clear paste steps</li>
+                <li>Sticky phone bar shows the order total, plus Gmail and email-app fallbacks for non-Messenger users</li>
+                <li>Hosted on its own Azure Static Web App, deployed by a GitHub Actions workflow that runs only when its folder changes</li>
+              </ul>
+              <ul class="chip-list small">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Azure Static Web Apps</li><li>GitHub Actions</li><li>CRO</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://proud-rock-0bf8e7200.4.azurestaticapps.net/" target="_blank" rel="noreferrer">Live site<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="app-card glass reveal">
+            <div class="funnel-shot">
+              <picture>
+                <source srcset="assets/funnels/ledgerleaf.webp" type="image/webp" />
+                <img src="assets/funnels/ledgerleaf.jpg" alt="Ledgerleaf concept landing page: bookkeeping and BIR filing with a Get a quote on WhatsApp button" width="960" height="600" loading="lazy" />
+              </picture>
+            </div>
+            <div class="app-body">
+              <div class="funnel-tags">
+                <span class="tag">Concept design</span>
+                <span class="live-badge">Live demo</span>
+              </div>
+              <h4>Ledgerleaf</h4>
+              <p>
+                A sample click-to-chat funnel for a fictional bookkeeping and BIR filing service. Three quick questions
+                build a complete inquiry, so every chat starts with what the business needs to quote.
+              </p>
+              <ul class="bullets">
+                <li>Qualifying questions (business type, monthly volume, services) build the message live as the visitor answers</li>
+                <li>WhatsApp and Viber links with the message pre-filled, plus a copy button as a fallback</li>
+                <li>Sample price estimate that updates with each answer, and sending is blocked until a service is picked</li>
+                <li>Accessible pill inputs (real radios and checkboxes) and a phone action bar that hides near the form</li>
+              </ul>
+              <ul class="chip-list small">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>WhatsApp links</li><li>Lead qualification</li>
+              </ul>
+              <div class="card-links">
+                <a href="funnels/ledgerleaf/">Live demo</a>
+                <a href="https://github.com/lextabi/MyPortfolio/tree/main/funnels/ledgerleaf" target="_blank" rel="noreferrer">Source<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
               </div>
             </div>
           </article>
@@ -460,7 +591,8 @@
             <h3>github.com/lextabi</h3>
             <p>
               Web apps, automation scripts, and learning projects, from PowerShell and Python tooling to deployed
-              Next.js and TypeScript web apps. Tabi Studio's app source is private; release notes are public.
+              Next.js and TypeScript web apps. Tabi Studio's app source is private; each app's changelog is public on
+              the studio site.
             </p>
             <div class="github-actions">
               <a class="button primary" href="https://github.com/lextabi" target="_blank" rel="noreferrer">View GitHub</a>
@@ -490,35 +622,35 @@
               <span class="lang"><i style="--dot: #3178c6"></i>TypeScript</span>
               <span class="live-badge">Live</span>
             </div>
-            <h4>Runners Diary</h4>
-            <p>
-              A running journal web app: log runs on a calendar, track pace and distance, view weekly charts, earn
-              achievement badges, and set monthly goals.
-            </p>
-            <ul class="chip-list small">
-              <li>Next.js</li><li>Supabase</li><li>Chart.js</li><li>Vercel</li>
-            </ul>
-            <div class="card-links">
-              <a href="https://lextabi-runnersdiary.vercel.app" target="_blank" rel="noreferrer">Live demo<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
-              <a href="https://github.com/lextabi/Runners_Diary" target="_blank" rel="noreferrer">Source<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
-            </div>
-          </article>
-          <article class="featured-card glass reveal">
-            <div class="featured-top">
-              <span class="lang"><i style="--dot: #3178c6"></i>TypeScript</span>
-              <span class="live-badge">Live</span>
-            </div>
             <h4>PayEngine</h4>
             <p>
               A self-service payroll calculator: users sign up, set salary and contribution preferences, and preview
               payroll with automatic tax computation driven by configurable Philippine rule tables.
             </p>
             <ul class="chip-list small">
-              <li>TypeScript</li><li>Auth</li><li>Rule tables</li><li>Vercel</li>
+              <li>TypeScript</li><li>Next.js</li><li>Supabase</li><li>Rule tables</li><li>Vercel</li>
             </ul>
             <div class="card-links">
               <a href="https://payengine-eight.vercel.app" target="_blank" rel="noreferrer">Live demo<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
               <a href="https://github.com/lextabi/PayEngine" target="_blank" rel="noreferrer">Source<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
+            </div>
+          </article>
+          <article class="featured-card glass reveal">
+            <div class="featured-top">
+              <span class="lang"><i style="--dot: #f1e05a"></i>JavaScript</span>
+              <span class="live-badge">Live</span>
+            </div>
+            <h4>JavaScript Projects</h4>
+            <p>
+              Plain HTML, CSS, and JavaScript projects from beginner to advanced, such as a calculator, quiz, weather
+              app, and Kanban board. Each is commented line by line and runs in the browser.
+            </p>
+            <ul class="chip-list small">
+              <li>JavaScript (ES6+)</li><li>HTML5</li><li>CSS3</li><li>Browser APIs</li><li>GitHub Pages</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://lextabi.github.io/prj_javascript/" target="_blank" rel="noreferrer">Live demo<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
+              <a href="https://github.com/lextabi/prj_javascript" target="_blank" rel="noreferrer">Source<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
             </div>
           </article>
           <article class="featured-card glass reveal">
@@ -574,6 +706,11 @@
             <span class="tag">Certification</span>
             <h3>AWS Certified Cloud Practitioner</h3>
             <p>Issued February 2025. Valid through February 2028.</p>
+          </article>
+          <article class="glass reveal">
+            <span class="tag tag-progress">In progress</span>
+            <h3>Microsoft Azure Fundamentals (AZ-900)</h3>
+            <p>Preparing for the exam alongside hands-on work running Tabi Studio and client sites on Azure.</p>
           </article>
           <article class="glass reveal">
             <span class="tag">Award</span>

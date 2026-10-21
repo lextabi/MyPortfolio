@@ -910,6 +910,159 @@ h1 {
   margin-top: auto;
 }
 
+/* Azure hosting panel: how Tabi Studio is deployed and run. */
+.azure-panel {
+  margin-bottom: 16px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(0, 120, 212, 0.14), rgba(72, 215, 197, 0.05)), var(--glass);
+}
+
+.azure-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.azure-head h3 {
+  margin: 10px 0 8px;
+  font-size: 1.3rem;
+}
+
+.azure-head p {
+  max-width: 78ch;
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.azure-mark {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0078d4, #3aa0f3);
+  box-shadow: 0 10px 30px rgba(0, 120, 212, 0.3);
+  color: #fff;
+}
+
+.azure-mark svg {
+  width: 26px;
+  height: 26px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linejoin: round;
+}
+
+.azure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.azure-grid li {
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.azure-grid strong,
+.azure-grid span {
+  display: block;
+}
+
+.azure-grid strong {
+  margin-bottom: 6px;
+  color: #8cc8ff;
+  font-family: var(--font-display);
+}
+
+.azure-grid span {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.azure-grid code {
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+}
+
+.app-more {
+  margin-top: 16px;
+  padding: 22px 26px;
+}
+
+.app-more .support-label {
+  margin-top: 0;
+}
+
+.app-more ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-more a {
+  color: var(--teal);
+}
+
+.app-more li > span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* ---------- Funnels ---------- */
+
+.section-lead {
+  max-width: 78ch;
+  margin-bottom: 28px;
+  color: var(--muted);
+}
+
+.funnel-shot {
+  padding: 22px 22px 0;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(243, 183, 95, 0.08), rgba(72, 215, 197, 0.06));
+}
+
+.funnel-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--glass-border);
+  border-bottom: 0;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.funnel-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.funnel-tags .tag,
+.funnel-tags .live-badge {
+  margin-bottom: 0;
+}
+
+.app-body > h4 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
 /* ---------- GitHub ---------- */
 
 .github-panel {
@@ -1087,10 +1240,16 @@ h1 {
 
 /* ---------- Achievements ---------- */
 
+/* auto-fit so the row stays even as certifications are added. */
 .achievement-list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 16px;
+}
+
+.tag-progress {
+  background: rgba(243, 183, 95, 0.12);
+  color: var(--amber);
 }
 
 /* ---------- Beyond engineering ---------- */
@@ -1244,7 +1403,6 @@ h1 {
     -webkit-backdrop-filter: var(--glass-blur);
   }
 
-  .achievement-list,
   .metrics {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1326,6 +1484,10 @@ h1 {
 
   .metrics,
   .achievement-list {
+    grid-template-columns: 1fr;
+  }
+
+  .azure-head {
     grid-template-columns: 1fr;
   }
 

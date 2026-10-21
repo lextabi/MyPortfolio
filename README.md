@@ -16,9 +16,10 @@ The site also includes a professional Beyond Engineering section for Lex's conte
 - Skills (9 grouped categories, including App Development)
 - Experience timeline
 - What I Do (capability cards)
-- Tabi Studio: Lex's independent Android app studio, with app cards for Runling and MT App (screenshots, engineering highlights, product and release-notes links)
+- Tabi Studio: Lex's independent Android app studio, with a "Live on Microsoft Azure" panel (Static Web Apps, GitHub Actions, Azure Functions, Table Storage), app cards for Runling and MT App (screenshots, engineering highlights, product page and changelog links), and a row for SyntaxDeck and Calm Crew
+- Funnels & Web Design: The Golden Compound (client click-to-chat funnel, live on Azure) and Ledgerleaf (concept click-to-chat funnel hosted in this repo)
 - Projects & GitHub: featured projects with live demo links, plus other public repos loaded from the GitHub API
-- Achievements, certifications, and education
+- Achievements, certifications (including AZ-900 in progress), and education
 - Beyond Engineering / content creator section
 - Contact links
 
@@ -27,15 +28,24 @@ The site also includes a professional Beyond Engineering section for Lex's conte
 - `index.html` - main portfolio page
 - `styles.css` - site styling and responsive layout
 - `script.js` - mobile navigation, active-section highlighting, scroll reveal, footer year, and GitHub repository loading (cached per session to stay under the API rate limit)
-- `assets/` - public-safe visual assets; `assets/apps/` holds the Tabi Studio mark, app icons, and resized app screenshots (480px JPEGs) copied from the `tabistudio` site
+- `assets/` - public-safe visual assets; `assets/apps/` holds the Tabi Studio mark, app icons, and resized app screenshots (480px JPEGs) from the Tabi Studio site; `assets/funnels/` holds 960px preview screenshots of each funnel
+- `funnels/ledgerleaf/` - the Ledgerleaf concept funnel (its own `index.html`, `styles.css`, `script.js`), served at `/funnels/ledgerleaf/` on GitHub Pages. `WHATSAPP_NUMBER` in its `script.js` is empty on purpose, so the demo never messages a real number
 
 ## Latest Session Changes
 
+Updated October 22, 2026:
+
+- Removed Runners Diary (repo deleted) and the links to the retired `Runling_release` and `mt_app_release` repos; app cards now link to each app's changelog on the Tabi Studio site.
+- Highlighted that Tabi Studio is hosted and managed on Microsoft Azure (moved from GitHub Pages in October 2026), and added AZ-900 as "In progress" under Achievements. **Change it to a certification card once passed**, and consider adding it to the hero badge and metrics.
+- Updated Tabi Studio to four apps in open testing (Runling v0.18, MT App v0.3.2, SyntaxDeck v0.1, Calm Crew v0.4) and dropped claims with no public proof (MT App's test count).
+- Added a Funnels & Web Design section and nav link: The Golden Compound and the Ledgerleaf concept.
+- Featured prj_javascript in place of Runners Diary; added Azure skills and GitHub Actions to Skills.
+- New profile photo (`assets/lex-headshot.*`); removed the old `lex-profile.*` files.
+
 Updated September 29, 2026:
 
-- Added a Tabi Studio section, framed as a side venture (founder and solo developer), with Runling (Godot 4, Kotlin, Supabase) and MT App (Flutter, SQLite, 188 tests) in open testing, and the engineering practices behind them.
+- Added a Tabi Studio section, framed as a side venture (founder and solo developer), with Runling (Godot 4, Kotlin, Supabase) and MT App (Flutter, SQLite) in open testing, and the engineering practices behind them.
 - Added a "Tabi Studio" nav link, an App Development skills card, and a Tabi Studio mention in About and the meta description.
-- The studio repos (`tabistudio`, `Runling_release`, `mt_app_release`) are excluded from the auto-loaded "More on GitHub" list since they are covered by the new section.
 
 Updated September 27, 2026 from the latest resume:
 
