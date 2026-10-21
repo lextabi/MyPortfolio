@@ -169,7 +169,10 @@ const renderRepoCard = (repo) => {
   const language = repo.language || "Code";
   const color = LANGUAGE_COLORS[language] || "#88a4bd";
   const homepage = safeUrl(repo.homepage);
-  const stars = repo.stargazers_count ? `<span>★ ${repo.stargazers_count}</span>` : "";
+  const stars = repo.stargazers_count
+    ? `<span><span aria-hidden="true">★</span> ${repo.stargazers_count}<span class="sr-only"> stars</span></span>`
+    : "";
+  const newTab = '<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span>';
 
   return `
     <article class="repo-card glass">
@@ -184,8 +187,8 @@ const renderRepoCard = (repo) => {
         ${stars}
       </div>
       <div class="card-links">
-        ${homepage ? `<a href="${homepage}" target="_blank" rel="noreferrer">Live demo ↗</a>` : ""}
-        <a href="${safeUrl(repo.html_url)}" target="_blank" rel="noreferrer">Source ↗</a>
+        ${homepage ? `<a href="${homepage}" target="_blank" rel="noreferrer">Live demo${newTab}</a>` : ""}
+        <a href="${safeUrl(repo.html_url)}" target="_blank" rel="noreferrer">Source${newTab}</a>
       </div>
     </article>
   `;
@@ -213,7 +216,7 @@ const loadGithub = async () => {
         <h4>GitHub repositories</h4>
         <p>Couldn't load live data right now. Visit the GitHub profile to browse every public repository.</p>
         <div class="card-links">
-          <a href="https://github.com/${GITHUB_USER}?tab=repositories" target="_blank" rel="noreferrer">Open GitHub ↗</a>
+          <a href="https://github.com/${GITHUB_USER}?tab=repositories" target="_blank" rel="noreferrer">Open GitHub<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
         </div>
       </article>
     `;
