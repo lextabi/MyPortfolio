@@ -33,6 +33,10 @@ The site also includes a professional Beyond Engineering section for Lex's conte
 
 ## Latest Session Changes
 
+Updated October 26, 2026 (later):
+
+- Runling card: open testing badge to v0.20, and the economy highlight now mentions the automated fairness test (a simulated month that keeps walkers ahead of paying players).
+
 Updated October 26, 2026:
 
 - Runling card: open testing badge to v0.19, and a highlight for its social features (friends, clubs, chat, and live race rooms run on the server).
