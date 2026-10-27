@@ -33,6 +33,10 @@ The site also includes a professional Beyond Engineering section for Lex's conte
 
 ## Latest Session Changes
 
+Updated October 27, 2026:
+
+- MT App card: open testing badge to v0.3.3, and a highlight for background backups and widget refresh with Android WorkManager (WorkManager chip added).
+
 Updated October 26, 2026 (later):
 
 - Runling card: open testing badge to v0.20, and the economy highlight now mentions the automated fairness test (a simulated month that keeps walkers ahead of paying players).

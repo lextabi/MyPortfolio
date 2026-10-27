@@ -463,7 +463,7 @@
                   <p>Private, offline-first money tracker</p>
                 </div>
               </div>
-              <span class="live-badge">Open testing · v0.3.2</span>
+              <span class="live-badge">Open testing · v0.3.3</span>
               <p>
                 Budgets, bills, savings goals, receipts, and crypto in one place, with a "safe to spend today" figure
                 until the next payday. No sign-up, and all data stays on the phone.
@@ -472,10 +472,11 @@
                 <li>Flutter app with Riverpod state and a typed SQLite database (drift) with schema migrations</li>
                 <li>Money stored as integer centavos, balances computed instead of stored, and unit, database, and widget tests</li>
                 <li>On-device receipt scanning with ML Kit, a home-screen widget, bill reminders, and CSV import/export</li>
+                <li>Background backups and widget refresh with Android WorkManager, running read-only while the app is closed</li>
                 <li>AES-256-GCM encrypted backups and biometric app lock</li>
               </ul>
               <ul class="chip-list small">
-                <li>Flutter</li><li>Dart</li><li>Riverpod</li><li>SQLite</li><li>ML Kit</li><li>AES-256</li><li>Android</li>
+                <li>Flutter</li><li>Dart</li><li>Riverpod</li><li>SQLite</li><li>ML Kit</li><li>WorkManager</li><li>AES-256</li><li>Android</li>
               </ul>
               <div class="card-links">
                 <a href="https://proud-glacier-07ba1b700.3.azurestaticapps.net/mt-app/" target="_blank" rel="noreferrer">Product page<span class="sr-only"> (opens in new tab)</span><span aria-hidden="true"> ↗</span></a>
